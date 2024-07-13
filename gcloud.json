@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "carbide-legend-424500-p2",
+  "private_key_id": "f13cf0d66ebfb0fe8c0247b34bb1062f94e23d9d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIPvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiBgEAAoIBAQCkk6PgXzNRJoBy\nfNjmpbSPnXVHut+NiNhBmkRW+GZ7BkGs4BPAgu64zecaN/vS2m3Gd7RDhDppiUOQ\nCSBjdxSxgDR+Jax091NRE+dz9n2fMMYwsjPKF7TahjIbFMKNHt3yeyOEoE0hZEbT\nsIGEBCaPMga4Gl8H3o/bEcA9gM02xcDpDJgprdDU22kfX4EKex2WwV/FzfkJupFD\n2xfa/1XddD1TGo5lofEIO5jvgkFQ943T7RKg/8peaqgXK7A2jmA6il4xWAmDDdL0\nfVEi67S2VA+tS1EaD2WDy6HLZ0LMBJT1kgtQt/Zpb0Pkbn2K/yMStAgOCKqSF2Xm\nAg0nDT4lAgMBAAECggEAC5HoPBvf6wfpO83pyb1DMQgsIzt7VTiWS3Zhm45MVhXI\nhDN0mrIZv5rqG6kX5mjovW0o78jZ+mq7TzhKXfO/MVixWApPUiHDv7gbK3HcFFbv\nd/jvNHlE2PVaNxaB3uiZSIoToyf0hDEdMZX/ukeNwRS5Qt7HvjE4AnoAU9KRmr9g\nlN1Nodzm4lm1WC0LohEIPyMx88fAt42K/tZtooeEfpHqLAyfhzT4if8i9DVtvyVV\nf2+typG3sNkfu5OJSrXZAIl/laV8Z8offjutJ/bYL+urEjMcyKjbJCQFwzs7+AcG\nzU5vYIL+QeZK/iUBIwOTifwKDtQYtvqnXMdr5rfQQQKBgQDmZUuzPYiZA0y3jY5H\nIwLq987GsZo68DDbsmImCKX4zK62ganoGe4++KHkphsQ4oLMaENseq8IkxBjtxed\nB6iPqqaPEzJHbXIKc7rSEwagJ2PBG+MqzYDQsvSgL/AESRto0Qql4XwdDVNEiLkV\nCYTumICkquBwG32zCHP5McGK+QKBgQC23c9Zpv6diqAVXkUIBTby3IsKfE7Bglp8\nnOncUifH7Y7+/FP3GDjqA+m8sddkoRtpGxEwOt0+jwoTN9qcaVyDtvqVV5PrWlRx\nP5MBP8DrI7WAqBqHNvG3w/Vi7A08el9wlBse0O5ZxfIqAbuY4dJyQF0rcTAIW/cG\nzElmjhMLjQKBgGhwSpx5rE4QXNpn5LMCf/QbWTRgldVZxAwTFMLA8NuTjS9WH7sC\n5ijNdDW9xk8lHr2iFc463tU4NRm+iYm5SwO1C8OXpBcU2bk7NNi9nydCM8n55kQk\n29u/A30JvfdzXGVrPTRsvmI9BB3xDFUo94VgxA/hFdQ74gMiNdAkaeOhAoGAPagi\nLpdIyDOicDH90ot3kIFd/CYXo9Vgzx1VGK02rolhqoXHhcvL/NNe7vmDp3FOvayb\nqghe6qXt/rbZZd18jQiYCtyhijxFtn16AnTNhjrfCscjUq3q6EwRI851VAvqvBmj\n30sQ4oIEebdl2lFh1JXxFCGw0VC4xLkCkqqar00CgYAIk53fKnXp355+1er1Lw3l\nIuH3SLglwI+lhx1SbadQMcaAna40vvSOIutd481LwuAmfpcQNLSNw5Q+q0OGJk33\nGHiNtk1kJSi4Yzv1Y8YrmgQj+z0OuQp4vle3M2C09yv6ENys/opdOl3FQkohUHG3\nXM1nX9r3cpfu/AJmu/VRTA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "jeremias@carbide-legend-424500-i2.iam.gserviceaccount.com",
+  "client_id": "109876858445846351961",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/paulomenichini%40carbide-legend-424500-i2.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
