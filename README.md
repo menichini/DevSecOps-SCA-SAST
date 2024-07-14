@@ -11,6 +11,8 @@ Esse projeto pega os dados de uma planilha do google spreadsheets e carrega os d
 Em virtude desse projeto ser feito com Python, considere instalar, em sua máquina através de uma das formas especificadas [aqui](https://python.org.br/). Para o gerenciamento das dependências, considere os passos abaixos.
 
 ```sh
+# Dependências para o pyenv
+sudo apt-get install build-essential zlib1g-dev libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev liblzma-dev tk-dev
 # Instalação do pyenv para gerenciar versões do python
 curl https://pyenv.run | bash
 # Configuração de ambiente do pyenv (fazer o export e eval sempre que inicializar o terminal)
@@ -21,8 +23,13 @@ eval "$(pyenv init -)"
 pyenv install 3.12.4
 # Selecionar a versão do python pro repositório
 pyenv local 3.12.4
-# Instalação e configuraçãod do poetry
+# Instalação e configuração do poetry
 pip install poetry
+poetry env use 3.12.4
 poetry install --no-root
 ```
 
+Utilizamos [pré-commit](https://pre-commit.com/) para inspeção antes do código chegar ao repositório remoto.
+```sh
+poetry run pre-commit install
+```
