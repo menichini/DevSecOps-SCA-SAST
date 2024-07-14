@@ -13,6 +13,13 @@ oauth2client = "^4.1.3"
 gspread = "^6.1.2"
 
 
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+
+
+[tool.poetry.group.sec.dependencies]
+detect-secrets = "^1.5.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
