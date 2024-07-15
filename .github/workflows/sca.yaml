@@ -1,0 +1,27 @@
+name: Software Component Analysis
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+    dependency-check:
+        name: Source Component Analysis and Security Vulnerabilities
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Setup dependency-check
+              run: |
+                VERSION=$(curl -s https://jeremylong.github.io/DependencyCheck/current.txt)
+                curl -Ls "https://github.com/jeremylong/DependencyCheck/releases/download/v$VERSION/dependency-check-$VERSION-release.zip" --output dependency-check.zip
+                unzip dependency-check.zip
+
+            - name: Run dependency-check
+              run: ./dependency-check/bin/dependency-check.sh --scan . --log dependency-check.log --enableExperimental
