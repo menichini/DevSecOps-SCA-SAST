@@ -24,4 +24,11 @@ jobs:
                 unzip dependency-check.zip
 
             - name: Run dependency-check
-              run: ./dependency-check/bin/dependency-check.sh --scan . --log dependency-check.log --enableExperimental
+              run: ./dependency-check/bin/dependency-check.sh --scan . -f JSON --enableExperimental
+
+            - name: Upload dependency-check report
+              uses: actions/upload-artifact@v4
+              if: always()
+              with:
+                  name: dependency-check-report
+                  path: dependency-check-report.json
