@@ -1,0 +1,38 @@
+name: Static Application Security Testing
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+    semgrep:
+        name: Static Application Security Testing
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Setup Python
+              uses: actions/setup-python@v5
+              with:
+                  python-version: 3.12.4
+
+            - name: Install semgrep
+              run: pip install semgrep
+
+            - name: Run semgrep
+              run: semgrep --config p/r2c-security-audit --error --skip-unknown-extensions
+
+            - name: Create Report Folder
+              run: mkdir -p ${{ github.repository }}/reports
+
+            - name: Generate Security Report
+              uses: peter-murray/github-security-report-action@v2
+              with:
+                token: ${{ secrets.SECURITY_TOKEN }}
+                sarifReportDir: ${{ github.repository }}/reports
