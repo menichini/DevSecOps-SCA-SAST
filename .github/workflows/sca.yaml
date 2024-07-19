@@ -32,3 +32,8 @@ jobs:
               with:
                   name: dependency-check-report
                   path: dependency-check-report.json
+
+            - name: Generate Security Report
+              uses: peter-murray/github-security-report-action@v2
+              with:
+                token: ${{ secrets.SECURITY_TOKEN }}
