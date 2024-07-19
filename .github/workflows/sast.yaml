@@ -29,10 +29,10 @@ jobs:
               run: semgrep --config p/r2c-security-audit --error --skip-unknown-extensions
 
             - name: Create Report Folder
-              run: mkdir -p ${{ github.repository }}/reports
+              run: mkdir -p ${{ github.workspace }}/reports
 
             - name: Generate Security Report
               uses: peter-murray/github-security-report-action@v2
               with:
                 token: ${{ secrets.SECURITY_TOKEN }}
-                sarifReportDir: ${{ github.repository }}/reports
+                sarifReportDir: ${{ github.workspace }}/reports
