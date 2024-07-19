@@ -24,11 +24,11 @@ jobs:
                 unzip dependency-check.zip
 
             - name: Run dependency-check
-              run: ./dependency-check/bin/dependency-check.sh --scan . -f JSON --nvdApiKey ${{ secrets.NVD_KEY }} --enableExperimental
+              run: ./dependency-check/bin/dependency-check.sh --scan . -f HTML --nvdApiKey ${{ secrets.NVD_KEY }} --enableExperimental
 
             - name: Upload dependency-check report
               uses: actions/upload-artifact@v4
               if: always()
               with:
                   name: dependency-check-report
-                  path: dependency-check-report.json
+                  path: dependency-check-report.html
